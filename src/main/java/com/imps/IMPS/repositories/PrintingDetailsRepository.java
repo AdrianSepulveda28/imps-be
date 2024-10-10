@@ -6,7 +6,6 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
 import com.imps.IMPS.models.PrintingDetails;
-import com.imps.IMPS.models.PrintingRecord;
 
 public interface PrintingDetailsRepository extends CrudRepository<PrintingDetails, Integer> {
 

@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.imps.IMPS.EmailService;
 import com.imps.IMPS.models.Notification;
 import com.imps.IMPS.repositories.NotificationRepository;
 
@@ -18,7 +17,6 @@ import com.imps.IMPS.repositories.NotificationRepository;
 public class NotificationController {
 	@Autowired
 	private NotificationRepository notificationRepository;
-	private EmailService emailService;
 	
 	@GetMapping(path = "/all")
     public @ResponseBody Iterable<Notification> getAllNotifications() {

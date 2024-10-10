@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.imps.IMPS.EmailService;
 import com.imps.IMPS.models.Comment;
 import com.imps.IMPS.models.CommentResponse;
 import com.imps.IMPS.models.Notification;
@@ -28,7 +27,6 @@ import com.imps.IMPS.repositories.PrintingDetailsRepository;
 public class CommentContoller {
 	@Autowired
 	private CommentRepository commentRepository;
-    private EmailService emailService;
     
     @Autowired
     private PrintingDetailsRepository printingDetailsRepository;

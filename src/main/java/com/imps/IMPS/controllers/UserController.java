@@ -2,18 +2,23 @@ package com.imps.IMPS.controllers;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
-import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
+import com.imps.IMPS.EmailService;
 import com.imps.IMPS.models.HomeDetails;
 import com.imps.IMPS.models.ServerResponse;
 import com.imps.IMPS.models.User;
@@ -22,7 +27,6 @@ import com.imps.IMPS.models.UserResponse;
 import com.imps.IMPS.repositories.HomeRepository;
 import com.imps.IMPS.repositories.UserReportRepository;
 import com.imps.IMPS.repositories.UserRepository;
-import com.imps.IMPS.EmailService;
 
 
 @CrossOrigin

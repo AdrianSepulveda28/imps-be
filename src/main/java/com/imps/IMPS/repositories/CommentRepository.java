@@ -4,7 +4,6 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
 import com.imps.IMPS.models.Comment;
-import com.imps.IMPS.models.PrintingRecord;
 
 public interface CommentRepository extends CrudRepository<Comment,Integer>{
 
