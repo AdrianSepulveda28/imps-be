@@ -9,6 +9,7 @@ public class ImpsApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ImpsApplication.class, args);
+		System.err.println("CAPSTONE!!!!!!!!!!!!!!");
 	}
 
 }
